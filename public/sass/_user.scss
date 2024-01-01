@@ -1,0 +1,23 @@
+body{
+    box-sizing:0;
+    //height:100vh;
+}
+
+.navTags{
+    display:flex !important;
+    flex-direction: row;
+    list-style-type:none;
+
+    li{
+        //width:15rem;
+    }
+}
+
+main{
+ height:100%;
+ width:100%;
+}
+
+.profile-title{
+    //letter-spacing: 5px;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='css/main.css' />
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>Account Settings</title>
+</head>
+<body class='bg-gradient-to-b from-gray-600 to-white'>
+    <header class='bg-gradient-to-b from-gray-600 to-white'>
+        <h1 class='font-extrabold text-gray-800 text-2xl'>GridBooks</h1>
+        <h2 class='text-center text-3xl font-extrabold text-gray-800'>Welcome To Your Account</h2>
+        <nav class='navBar'>
+            <ul class='navTags  mt-8'>
+                <a href="/profile.html" class='bg-gradient-to-b from-gray-600 to-white p-2  rounded-lg  text-center text-gray-800 font-semibold shadow-md hover:bg-gradient-to-b hover:from-purple-900 hover:to-white cursor-pointer lg:w-1/6'><li>Profile</li></a>
+                <a href="/orders.html" class='bg-gradient-to-b from-gray-600 to-white p-2  rounded-lg  text-center text-gray-800 font-semibold shadow-md hover:bg-gradient-to-b hover:from-purple-900 hover:to-white cursor-pointer lg:w-1/6'><li>Orders</li></a>
+                <a href="/accountSettings.html" class='bg-gradient-to-b from-gray-600 to-white p-2  rounded-lg  text-center text-gray-800 font-semibold shadow-md hover:bg-gradient-to-b hover:from-purple-900 hover:to-white cursor-pointer lg:w-1/6'><li>Account Settings</li></a>
+                <a href="/myBlogs.html" class='bg-gradient-to-b from-gray-600 to-white p-2  rounded-lg  text-center text-gray-800 font-semibold shadow-md hover:bg-gradient-to-b hover:from-purple-900 hover:to-white cursor-pointer lg:w-1/6'><li>Your Blog Posts</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main class='bg-gradient-to-b from-white to-gray-600 h-fit'>
+        <div class="profilePicuture w-2/6 h-2/6 mx-auto mt-8 ">
+            <img id="profileImg" src="/imgs/Profile/profile.jpeg" alt="Profile Picture" class=' sm:w-3/6 sm:h-3/6 xs:w-11/12 xs:h-11/12 rounded-full mx-auto'>
+            <button id="profilePictureChangeWrapper" class='py-3 px-8 mt-6 lg:ml-32 bg-purple-400 text-pink-900 font-extrabold rounded-full border border-3 border-red-600 shadow-lg hover:bg-purple-600 hover:text-white' >Change
+                <input type="file" hidden="true" id="updateProfilePicture" accept="image/*" />
+            </button>
+        </div> 
+        <hr class='mt-5 border border-black  mb-5 w-5/6'/>
+        <form action="" class="user-info mb-3" autocomplete="off">
+            <label for="#userName" class='font-bold block'>User Name: &nbsp;</label>
+            <input id='userName' type="text" placeholder="Your Name" class=' mb-4 bg-blue-600 px-6 py-2 outline-none rounded-full border border-4 border-blue-700 shadow-xl font-semibold'>
+            <button id='changeUserName' class='py-3 px-8 mt-6  ml-32 bg-purple-400 text-pink-900 font-extrabold rounded-full border border-3 border-red-600 shadow-lg hover:bg-purple-600 hover:text-white'>Change</button> <br>
+            <label for="#age" class='font-bold block'>Age: &nbsp;</label>
+            <input id='age' type="text" placeholder="Your Age" class='mb-4 bg-blue-600 px-6 py-2 outline-none rounded-full border border-4 border-blue-700 shadow-xl font-semibold'>
+            <button id='changeAge' class='py-3 px-8 mt-6 ml-32  bg-purple-400 text-pink-900 font-extrabold rounded-full border border-3 border-red-600 shadow-lg hover:bg-purple-600 hover:text-white'>Change</button> <br>
+            <label for="#yourAddress" class='font-bold block'>Your Address: &nbsp;</label>
+            <input id='yourAddress' type="text" placeholder="Your Address" class='mb-4 bg-blue-600 px-6 py-2 outline-none rounded-full border border-4 border-blue-700 shadow-xl font-semibold'>
+            <button id='changeAddress' class='py-3 px-8 mt-6 ml-32  bg-purple-400 text-pink-900 font-extrabold rounded-full border border-3 border-red-600 shadow-lg hover:bg-purple-600 hover:text-white'>Change</button> <br>
+            <label for="#email" class='font-bold block'>Email: &nbsp;</label>
+            <input id='email' type="text" placeholder="Your Email " class='mb-4 bg-blue-600 px-6 py-2 outline-none rounded-full border border-4 border-blue-700 shadow-xl font-semibold'>
+            <button id='changeEmail' class='py-3 px-8 mt-6 ml-32  bg-purple-400 text-pink-900 font-extrabold rounded-full border border-3 border-red-600 shadow-lg hover:bg-purple-600 hover:text-white'>Change</button> <br>
+            <label for="#phoneNumber" class='font-bold block'>Phone Number: &nbsp;</label>
+            <input id='phoneNumber' type="text" placeholder="Your Name" class='mb-4 bg-blue-600 px-6 py-2 outline-none rounded-full border border-4 border-blue-700 shadow-xl font-semibold'>
+            <button id='changePhoneNumber' class='py-3 px-8 mt-6 ml-32  bg-purple-400 text-pink-900 font-extrabold rounded-full border border-3 border-red-600 shadow-lg hover:bg-purple-600 hover:text-white'>Change</button> <br>
+            <label for="#password" class='font-bold block'>Password: &nbsp;</label>
+            <input id='password' type="text" placeholder="password" class='mb-4 bg-blue-600 px-6 py-2 outline-none rounded-full border border-4 border-blue-700 shadow-xl font-semibold'>
+            <button id='changePassword' class='py-3 px-8 mt-6 ml-32  bg-purple-400 text-pink-900 font-extrabold rounded-full border border-3 border-red-600 shadow-lg hover:bg-purple-600 hover:text-white'>Change</button> <br>
+            <label for="#study" class='font-bold block'>Study: &nbsp;</label>
+            <input id='study' type="text" placeholder="Your study" class='mb-4 bg-blue-600 px-6 py-2 outline-none rounded-full border border-4 border-blue-700 shadow-xl font-semibold'>
+            <button id='changeStudy' class='py-3 px-8 mt-6 ml-32  bg-purple-400 text-pink-900 font-extrabold rounded-full border border-3 border-red-600 shadow-lg hover:bg-purple-600 hover:text-white'>Change</button> <br>
+            <label for="#interests" class='font-bold block'>Interests: &nbsp;</label>
+            <input id='interests' type="text" placeholder="Your Interests" class='mb-4 bg-blue-600 px-6 py-2 outline-none rounded-full border border-4 border-blue-700 shadow-xl font-semibold disabled'>
+            <button id='changeInterests' class='py-3 px-8 mt-6 ml-32  bg-purple-400 text-pink-900 font-extrabold rounded-full border border-3 border-red-600 shadow-lg hover:bg-purple-600 hover:text-white'>Change</button> <br>
+            <button id='done' class='py-3 px-8 mt-6 ml-32 mb-16  bg-purple-400 text-pink-900 font-extrabold rounded-full border border-3 border-red-600 shadow-lg hover:bg-purple-600 hover:text-white'>Done</button> <br>
+        </form>
+    </main>
+    <footer class='w-full'>
+        &copy; 2021 Gridbooks | <span><a href="#">Privacy policy</a></span>|<span><a href="#">Shopping & return Policy</a></span>|<span><a href="#">Wholesale Orders</a></span>|<span><a href="#">Where to buy</a></span>|<span><a href="#">Contacy Us</a></span>
+    </footer>
+    <script type="text/javascript" src='./js/changeSettings.js'></script>
+</body>
+</html>

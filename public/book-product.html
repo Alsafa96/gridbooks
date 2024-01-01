@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <link rel='stylesheet' href='./css/main.css' />
+    <title>Product</title>
+</head>
+<body>
+    <div id="fb-root"></div>
+    <header>
+        <h1><a href='#'>Gridsbook</a></h1>
+    </header>
+    <main>
+        <nav class='navbar'>
+            <i class="fa fa-bars fa-2x navbar__icon humburger__icon"></i>
+            <a href="account.html" class='user-account'><!--<i class='fa fa-user fa-2x navbar__icon'></i>--></a>
+            <a href='cart.html' class='shopping-cart'><i class='fa fa-shopping-cart fa-2x navbar__icon'></i></a>
+            <i class='fa fa-search fa-2x navbar__icon navbar__icon__magnifying-glass inline ml-6 cursor-pointer'><span class='inline ml-3'>Look For...</span></i>
+        </nav>
+        <div class="nav-links ml-32 mt-20">
+            <span>
+                <a href="index.html">Home</a>
+            </span>
+            <span>/</span>
+            <span>
+                <a href="index.html">Collections</a>
+            </span>
+            <span>/</span>
+            <span>
+                <a href="index.html">Featured Products</a>
+            </span>
+            <span>/</span>
+            <span>
+                <a href="#" class="text-gray-500">Web Book</a>
+            </span>
+        </div>
+
+        <div class="main-container flex flex-row">
+            <div class="img-container w-6/12">
+                <img class="main-image"  width="500" height="700">
+                <a  class="full-size-link" >
+                    <i class="fa fa-window-maximize"></i>
+                    &nbsp;View full size image</a> <br />
+                <a href="mailto:alsafa_thaar@yahoo.com" class="full-size-link">
+                    <i class="fa fa-envelope ">&nbsp; Email us about this product</i>
+                </a>
+            </div>
+            <div class="images-list">
+               
+            </div>
+            <div class="img-info-container ml-16 w-6/12">
+                <h2 class="product-name font-bold text-4xl text-gray-700">Web Book</h2>
+                <span class="product-price text-gray-600 text-lg py-10 mb-10"> $15.00</span>
+                <hr class="w-100 mt-5" />
+                <div class="product-description text-gray-600 text-left py-10">
+                    The Web Book is a grid set for versatile web sketching in 4, 5, 6, 12 and 16 columns. To be used for desktop, tablet and mobile, it features a dot grid that can be divided into columns and used in either portrait or landscape orientations. Opposite the grid, a notes page includes lined paper and a checklist for action items. A book consists of 32 pages.
+                </div>
+                <button class="bg-blue-700 rounded rounded-md text-center py-1 px-6 text-white">Like
+                    <i class="fa fa-thumbs-up"></i>
+                </button>
+                <button class="bg-blue-300 rounded rounded-xl text-center py-1 px-6 text-white">Tweet
+                    <i class="fa fa-twitter"></i>
+                </button>
+                <button class="save-btn bg-red-700  text-center py-1 px-6 text-white">Save
+                    <i class="fa fa-save"></i>
+                </button>
+
+                <hr class="mt-10">
+                <div class="quantity mt-10">
+                    <span class="mt-10 text-gray-600">Quantity</span>
+                    <input type="text" placeholder="1" class="quantityInput text-center border border-2 w-8 border-gray-600 text-gray-500 outline-none">
+                </div>
+                <button class="addToCart bg-black text-white px-6 py-2 rounded rounded-md mt-10">Add To Cart
+                </button>
+            </div>
+        </div>
+        <hr class='mt-6' />
+        <div class="featured-products">
+            <h4 class="featured-products__title mb-8">Related Products</h4>
+            <div class="featured-products__list">
+                <div class='featured-product'>
+                    <img src="imgs/mobile book.jpg" alt="mobile-book" class="mobile-book featured-products__product">
+                    <div class='product-info'>
+                        <p class="product__name"><a href='#' class="mobile-book__name">Mobile Book</a></p><br />
+                        <span class="mobile-book__price">$18.00</span>
+                    </div>
+                </div>
+               
+                <div class="featured-product ">
+                    <img src="imgs/web pad.jpg" alt="web-pad" class="web-pad featured-products__product ">
+                    <div class="product-info">
+                        <p class="product__name"><a href='#' class="web-pad__name">Web Pad</a></p><br />
+                        <span class="web-pad__price">$10.00</span>
+                    </div>   
+                </div>
+                <div class="featured-product">
+                    <img src="imgs/mobile pad.jpg" alt="mobile-pad" class="mobile-pad  featured-products__product">
+                    <div class="product-info">
+                        <p class='product__name'><a href='#' class="mobile-pad__name">Mobile Pad</a></p><br />
+                        <span class="mobile-pad__price">$10.00</span>
+                    </div>
+                </div>
+                <div class="featured-product">
+                    <img src="imgs/spiral_book.jpg" alt="web-book" class="web-book featured-products__product">
+                    <div class="product-info">
+                        <p class='product__name-web__book'><a href='#' class="web-book__name">Web Book</a></p><br />
+                        <span class="web-book__price">$15.00</span>
+                    </div>
+                </div>
+               
+            </div>   
+        </div>
+        <hr>
+        
+        <div class="associations">
+            <div class="get-in-touch">
+                <span class="stay-on-touch">GET IN TOUCH</span><br />
+                <a href="mailto:alsafa-thaar@yahoo.com" class="email-contact-us">info@sajakfarki.com</a>
+            </div>
+            <hr>
+    
+            <div class="follow-us-out-there">
+                <span class="follow-us">FOLLOW US OUT THERE</span><br />
+                <i class="fa fa-twitter fa-2x"></i>
+                <i class="fa fa-facebook-square fa-2x"></i>
+            </div>
+            <hr>
+            
+            <div class="newsletter-container">
+                <span class="newsletter">NEWSLETTER</span><br />
+                <input type="text" placeholder="Email address" class='email-address'>
+                <input type="button" value='submit' class='email-address-submit'>
+            </div>  
+        </div>
+        <hr>
+        <div class="bottom-icons">
+            <i class="fa fa-cc-paypal fa-2x"></i>
+            <i class="fa fa-cc-visa fa-2x"></i>
+            <i class="fa fa-cc-mastercard fa-2x"></i>
+        </div>
+        
+    </main>
+    <footer >
+        &copy; 2021 Gridbooks | <span><a href="#">Privacy policy</a></span>|<span><a href="#">Shopping & return Policy</a></span>|<span><a href="#">Wholesale Orders</a></span>|<span><a href="#">Where to buy</a></span>|<span><a href="#">Contacy Us</a></span>
+    </footer>
+    <script type="text/javascript" src="./js/app.js"></script>
+    <script type="module" src="./js/setCurrentBookProduct.js"></script>
+    <script type="module" src="./js/setCartProduct.js"></script>
+</body>
+</html>

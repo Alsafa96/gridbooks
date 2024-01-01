@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='css/main.css' />
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>User Account</title>
+</head>
+<body class='bg-gradient-to-b from-gray-600 to-white'>
+    <header class='bg-gradient-to-b from-gray-600 to-white'>
+        <h1 class='font-extrabold text-gray-800 text-2xl'>GridBooks</h1>
+        <h2 class='text-center xs:text-lg xl:text-3xl font-extrabold text-gray-800'>Welcome To Your Account</h2>
+        <nav class='navBar'>
+            <ul class='navTags  mt-8'>
+                <a href="/profile.html" class='bg-gradient-to-b from-gray-600 to-white p-2  rounded-lg  text-center text-gray-800 font-semibold shadow-md hover:bg-gradient-to-b hover:from-purple-900 hover:to-white cursor-pointer lg:w-1/6'><li>Profile</li></a>
+                <a href="/orders.html" class='bg-gradient-to-b from-gray-600 to-white p-2  rounded-lg  text-center text-gray-800 font-semibold shadow-md hover:bg-gradient-to-b hover:from-purple-900 hover:to-white cursor-pointer lg:w-1/6'><li>Orders</li></a>
+                <a href="/accountSettings" class='bg-gradient-to-b from-gray-600 to-white p-2  rounded-lg  text-center text-gray-800 font-semibold shadow-md hover:bg-gradient-to-b hover:from-purple-900 hover:to-white cursor-pointer lg:w-1/6'><li>Account Settings</li></a>
+                <a href="/myBlogs.html" class='bg-gradient-to-b from-gray-600 to-white p-2  rounded-lg  text-center text-gray-800 font-semibold shadow-md hover:bg-gradient-to-b hover:from-purple-900 hover:to-white cursor-pointer lg:w-1/6'><li>Your Blog Posts</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main class='bg-gradient-to-b from-white to-gray-600 h-fit' >
+        <div class="blog-post">
+            <div class="profilePicuture w-5/6 h-2/6  mt-8 xs:block sm:flex">
+                <div class="profile-info xs:flex">
+                    <img src="/imgs/Profile/profile.jpeg" alt="Profile Picture" class='profilePicture rounded-full' width="100" height="100">
+                    <span class='userName font-bold text-gray-800'></span>
+                    <h3 class='mt-5 ml-2 font-bold text-gray-700 underline'>Category</h3>
+                    <div class="categories mb-10">
+                       
+                    </div>
+                    
+                </div>
+
+                <div class="mainArticleContainer  indent-10 ml-20 md:w-4/6 lg:w-3/6">
+                    <div class="articleContainer xs:ml-0 sm:ml-20 mb-10 text-center indent-10 bg-gradient-to-t rounded rounded-lg border-4 border-gray-600 from-slate-800 shadow-xl shadow-blue-700 to-white ">
+                        <div class="article xs:ml-0 sm:ml-20 md:ml-0 mb-10 text-center indent-10 bg-gradient-to-t rounded rounded-lg border-4 border-gray-600 from-slate-800 shadow-xl shadow-blue-700 to-white p-6 md:w-full lg:w-full">
+                            <h1 class="article-title font-bold text-2xl mb-3 text-orange-700 border-2 border-orange-900 rounded-md shadow-orange-900 shadow-lg">This is article title</h1>
+                            <span class="article-content"><!--Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, doloremque mollitia vitae maiores ratione non, sapiente est sit pariatur veniam sed, nihil fuga repudiandae labore modi atque nesciunt corporis aliquam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptates aperiam soluta amet, quos facere ducimus asperiores animi, exercitationem cum quo earum, vel molestias. Magnam commodi harum ea nisi architecto? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita eligendi facilis provident quis, asperiores corporis dolore eum officia deserunt sunt fuga accusantium placeat quas. Itaque, quisquam harum. Nobis, numquam magni? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos magni iste voluptatum reiciendis beatae, blanditiis voluptatibus? Esse quam perferendis quis excepturi! Corrupti error necessitatibus expedita ut veniam, eaque modi natus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, dolore quae ipsum dicta dolores ad quibusdam odio repellendus reprehenderit perferendis corrupti cum, iure temporibus itaque aut, a eum incidunt perspiciatis?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus dolores quos explicabo officiis quis reiciendis vitae. Dolore pariatur quae eum suscipit adipisci perspiciatis totam, aliquam cupiditate porro minus omnis consequuntur!--></span> <br>
+                        </div>
+                        <button disabled="true" class='edit-blog bg-blue-400 p-4 outline-none hover:bg-blue-700 hover:text-white rounded-full border-2 border-blue-600'>Edit</button>
+                        <button disabled='true' class='delete-blog bg-blue-400 p-4 outline-none hover:bg-blue-700 hover:text-white rounded-full border-2 border-blue-600'>Delete</button>
+                        <input type="text" hidden class="activeCategory">
+                    </div>
+                    <button class='create-blog xs:mx-auto md:create-blog bg-blue-400 p-4 outline-none hover:bg-blue-700 hover:text-white rounded-full border-2 border-blue-600 block  mb-10'>Create New Article</button>
+
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        &copy; 2021 Gridbooks | <span><a href="#">Privacy policy</a></span>|<span><a href="#">Shopping & return Policy</a></span>|<span><a href="#">Wholesale Orders</a></span>|<span><a href="#">Where to buy</a></span>|<span><a href="#">Contacy Us</a></span>
+    </footer>
+    <script type="text/javascript" src="./js/loadMyBlogs.js"></script>
+    <script type="text/javascript" src="./js/editBlog.js"></script>
+</body>
+</html>

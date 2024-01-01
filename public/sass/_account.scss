@@ -1,0 +1,261 @@
+main {
+    padding: 0.7rem;
+}
+
+.customer-login-header,
+.cart-header {
+    text-align: center;
+    font-weight: bolder;
+    padding: 1rem;
+    font-size: 2.2rem;
+    color: #545557;
+}
+
+.customer-forgot-header,
+.customer-signUp-header {
+    text-align: center;
+    font-weight: bolder;
+    padding: 1rem;
+    font-size: 2.2rem;
+    color: #545557;
+}
+
+
+.user-login__form {
+    margin: 1rem;
+
+    label {
+        color: #7b7c80;
+        font-size: 1.1rem;
+    }
+
+    input[type=text] {
+        margin: 1rem auto 1rem auto;
+        width: 100%;
+        padding: 0.4rem;
+        color: #7b7c80;
+        outline: none;
+        border: 1px solid #bababa;
+        border-radius: 2px;
+    }
+
+    .submit-user-credentials {
+        width: 103%;
+        padding: 0.4rem;
+        margin-top: 1rem;
+        border-radius: 3px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        border: none;
+        color: white;
+        background-color: black;
+
+        &:hover {
+            cursor: pointer;
+            background-color: steelblue;
+        }
+    }
+
+    .reset-instructions {
+        color: #7b7c80;
+        display: block;
+        margin: auto 3% 3rem 10%;
+
+    }
+
+}
+
+.forgot-password {
+    margin: 2rem 7% 2rem 40%;
+    font-size: 0.8rem;
+
+    a {
+        color: #7b7c80;
+    }
+}
+
+.cancel-forgot {
+    margin: 2rem 15% 2rem 45%;
+    font-size: 1rem;
+
+    a {
+        color: #7b7c80;
+    }
+}
+
+.new-user__register {
+    margin: 2rem 7% 5rem 25%;
+
+    .is-new-user {
+        color: #7b7c80;
+    }
+
+    .sign-up {
+        color: black;
+        text-decoration: none;
+
+        &:hover {
+            color: steelblue;
+        }
+    }
+}
+
+@media screen and (min-width:941px) {
+    .user-login__form {
+        margin: 3rem;
+        width: 30%;
+
+        .submit-user-credentials {
+            display: inline;
+            width: 30%;
+        }
+    }
+
+    .forgot-password {
+        display: block;
+        margin-left: 11rem;
+        margin-top: -4rem;
+
+        hr {
+            margin-top: 1rem;
+            margin-left: -8rem;
+            width: 56%;
+        }
+    }
+
+    .new-user__register {
+        display: block;
+        margin-left: 3rem;
+    }
+
+    .customer-login-header,
+    .customer-forgot-header,
+    .customer-signUp-header,
+    .cart-header {
+        text-align: left;
+        margin-left: 3rem;
+        padding: 3rem 0 3rem 0;
+    }
+
+    .customer-login-header::before {
+        content: 'Home/';
+        font-size: 1rem;
+        position: absolute;
+        top: 13rem;
+        font-weight: normal;
+    }
+
+    .customer-login-header::after {
+        content: 'Account';
+        font-size: 1rem;
+        position: absolute;
+        top: 13rem;
+        left: 6.9rem;
+        font-weight: normal;
+        color: #7b7c80;
+    }
+
+    .cart-header::before {
+        content: 'Home/';
+        font-size: 1rem;
+        position: absolute;
+        top: 13rem;
+        font-weight: normal;
+    }
+
+    .cart-header::after {
+        content: 'Cart';
+        font-size: 1rem;
+        position: absolute;
+        top: 13rem;
+        left: 6.9rem;
+        font-weight: normal;
+        color: #7b7c80;
+    }
+
+    .customer-forgot-header::before {
+        content: 'Home/';
+        position: absolute;
+        top: 13rem;
+        font-size: 1rem;
+        font-weight: normal;
+    }
+
+    .customer-forgot-header::after {
+        content: 'Account';
+        font-size: 1rem;
+        position: absolute;
+        top: 13rem;
+        left: 6.9rem;
+        font-weight: normal;
+        color: #7b7c80;
+    }
+
+    .customer-signUp-header::before {
+        content: 'Home';
+        position: absolute;
+        top: 13rem;
+        font-size: 1rem;
+        font-weight: normal;
+    }
+
+    .user-login__form {
+        width: 40%;
+
+        .reset-instructions {
+            margin-left: 0;
+        }
+    }
+
+    .cancel-forgot {
+        position: absolute;
+        margin-top: -4.5rem;
+        margin-left: 11rem;
+
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+@media screen and (min-width:1040px) {
+
+    .forgot-password,
+    .cancel-forgot {
+        margin-left: 13rem;
+    }
+
+    .forgot-password {
+        hr {
+            margin-left: -10rem;
+        }
+    }
+}
+
+@media screen and (min-width:1250px) {
+
+    .forgot-password,
+    .cancel-forgot {
+        margin-left: 15rem;
+    }
+
+    .forgot-password {
+        hr {
+            margin-left: -12rem;
+        }
+    }
+}
+
+@media screen and (min-width:1550px) {
+
+    .forgot-password,
+    .cancel-forgot {
+        margin-left: 17rem;
+    }
+
+    .forgot-password {
+        hr {
+            margin-left: -14rem;
+        }
+    }
+}

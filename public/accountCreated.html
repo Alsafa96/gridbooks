@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <link rel='stylesheet' href='css/main.css' />
+    <title>Account Created</title>
+</head>
+<body>
+    <header>
+        <h1><a href='#'>Gridsbook</a></h1>
+    </header>
+    <main>
+        <nav class='navbar'>
+            <i class="fa fa-bars fa-2x navbar__icon humburger__icon"></i>
+            <a href="#" class='user-account'><!--<i class='fa fa-user fa-2x navbar__icon'></i>--></a>
+            <a href="#" class="shopping-cart"><i class='fa fa-shopping-cart fa-2x navbar__icon'></i></a>
+            <i class='fa fa-search fa-2x navbar__icon navbar__icon__magnifying-glass inline ml-6 cursor-pointer'><span class='inline ml-3'>Look For...</span></i>
+
+        </nav>
+        <hr>
+        
+        <h1 class='customer-forgot-header'>Account Created successfully</h1>
+        <hr>
+        <h3 class='text-center font-bold text-3xl my-4'>You have successfully created an account.</h3>
+        <div class='loader mx-auto my-3'></div>
+
+        <div class="redirecting text-center font-bold text-lg my-4">You will be redirected To the main page<var class='text-3xl text-red-700'>6</var> seconds</div>
+        <hr>
+
+        <div class="associations">
+            <div class="get-in-touch">
+                <span class="stay-on-touch">GET IN TOUCH</span><br />
+                <a href="mailto:alsafa-thaar@yahoo.com" class="email-contact-us">info@sajakfarki.com</a>
+            </div>
+            <hr>
+    
+            <div class="follow-us-out-there">
+                <span class="follow-us">FOLLOW US OUT THERE</span><br />
+                <i class="fa fa-twitter fa-2x"></i>
+                <i class="fa fa-facebook-square fa-2x"></i>
+            </div>
+            <hr>
+            
+            <div class="newsletter-container">
+                <span class="newsletter">NEWSLETTER</span><br />
+                <input type="text" placeholder="Email address" class='email-address'>
+                <input type="button" value='submit' class='email-address-submit'>
+            </div>
+        </div>
+        <hr>
+        <div class="bottom-icons">
+            <i class="fa fa-cc-paypal fa-2x"></i>
+            <i class="fa fa-cc-visa fa-2x"></i>
+            <i class="fa fa-cc-mastercard fa-2x"></i>
+        </div>
+        
+    </main>
+    <footer>
+        &copy; 2021 Gridbooks | <span><a href="#">Privacy policy</a></span>|<span><a href="#">Shopping & return Policy</a></span>|<span><a href="#">Wholesale Orders</a></span>|<span><a href="#">Where to buy</a></span>|<span><a href="#">Contacy Us</a></span>
+    </footer>
+    <script type='text/javascript' src='js/app.js'></script>
+    <script>
+        let secondsCounter =5;
+        setInterval(function(){
+            document.querySelector('var').textContent=secondsCounter;
+            secondsCounter--;
+            if(secondsCounter<0){
+                clearInterval();
+                window.location.href='/';
+            }
+        },1000);
+    </script>
+</body>
+</html>

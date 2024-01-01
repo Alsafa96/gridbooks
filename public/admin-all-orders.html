@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='css/main.css' />
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>All-orders_Admin-Panel</title>
+</head>
+<body class='bg-gradient-to-b from-gray-600 to-white'>
+    <header class='bg-gradient-to-b from-gray-600 to-white'>
+        <h1 class='font-extrabold text-gray-800 text-2xl'>GridBooks</h1>
+        <h2 class='text-center xs:text-lg text-3xl font-extrabold text-gray-800'>Welcome To Admin Control Panel</h2>
+        <nav class='navBarss'>
+            <ul class='navTags  mt-8'>
+                <a href="/profile.html" class='bg-gradient-to-b from-gray-600 to-white p-2  rounded-lg  text-center text-gray-800 font-semibold shadow-md hover:bg-gradient-to-b hover:from-purple-900 hover:to-white cursor-pointer lg:w-1/6'><li>Admin Profile</li></a>
+                <a href="#" class='bg-gradient-to-b from-gray-600 to-white p-2  rounded-lg  text-center text-gray-800 font-semibold shadow-md hover:bg-gradient-to-b hover:from-purple-900 hover:to-white cursor-pointer lg:w-1/6'><li>All Orders</li></a>
+                <a href="/admin-all-users.html" class='bg-gradient-to-b from-gray-600 to-white p-2  rounded-lg  text-center text-gray-800 font-semibold shadow-md hover:bg-gradient-to-b hover:from-purple-900 hover:to-white cursor-pointer lg:w-1/6'><li>Customers</li></a>
+                <a href="/add-remove-goods.html" class='bg-gradient-to-b from-gray-600 to-white p-2  rounded-lg  text-center text-gray-800 font-semibold shadow-md hover:bg-gradient-to-b hover:from-purple-900 hover:to-white cursor-pointer lg:w-1/6'><li>Add / Remove goods</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main class='bg-gradient-to-b from-white to-gray-600 h-full'>
+        <div class='grid grid-cols-5 gap-3 ordersRecordsContainer'>
+            <table  class="ordersRecords mt-8 overflow-auto mx-auto">
+                <thead>
+                    <th class='underline'>No.</th>
+                    <th class='underline'>Order Name</th>
+                    <th class='underline'>Price</th>
+                    <th class='underline'>Order Date</th>
+                    <th class='underline'>Order Time</th>
+                    <th class='underline'>Quantity</th>
+                    <th class='underline'>Customer Name</th>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+        <button class='deleteAllOrders block mx-auto bg-gradient-to-b from-blue-900 to-white p-3 font-bold rounded rounded-2xl border border-4 border-blue-800 hover:from-gray-900 hover:to-white mb-5'>Delete All Orders</button>
+
+    </main>
+    <footer>
+        &copy; 2021 Gridbooks | <span><a href="#">Privacy policy</a></span>|<span><a href="#">Shopping & return Policy</a></span>|<span><a href="#">Wholesale Orders</a></span>|<span><a href="#">Where to buy</a></span>|<span><a href="#">Contacy Us</a></span>
+    </footer>
+    <script type="text/javascript" src="./js/listAllOrders.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='css/main.css' />
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+   
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <title>createBlog</title>
+</head>
+<body class='bg-gradient-to-b from-gray-600 to-white'>
+    <header class='bg-gradient-to-b from-gray-600 to-white'>
+        <h1 class='font-extrabold text-gray-800 text-2xl'>New Blog Post</h1>
+    </header>
+    <main class='bg-gradient-to-b from-white to-gray-600 h-full'>
+       
+        <form method="post" action="/blogPost">
+            <label for="#categoryInputBox" class='font-bold mr-8'>Category</label>
+           <input id="categoryInputBox" type="text"  name="category" class="w-4/6 px-4 py-2 mb-3 border-2 border-black rounded-md" /><br />
+           <label for="#articleTitle" class="font-bold mr-16">Title</label>
+           <input id="articleTitle" type="text" name="articleTitle" class="w-4/6 px-4 py-2 mb-3 border-2 border-black rounded-md"><br />
+           <textarea name='blogPostContent' id="myTextArea"></textarea>
+        </form>
+    </main>
+    <footer>
+        &copy; 2021 Gridbooks | <span><a href="#">Privacy policy</a></span>|<span><a href="#">Shopping & return Policy</a></span>|<span><a href="#">Wholesale Orders</a></span>|<span><a href="#">Where to buy</a></span>|<span><a href="#">Contacy Us</a></span>
+    </footer>
+    <script type="text/javascript" src='/js/createBlogPost.js'></script>
+</body>
+</html>

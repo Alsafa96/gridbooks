@@ -1,0 +1,36 @@
+.shopping-cart {
+    color: #C6C6C6;
+}
+
+
+.cart-info {
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #7b7c80;
+    margin-bottom: 7rem;
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+@media screen and (max-width:940px) {
+
+
+    .cart-header-section {
+        hr {
+            width: 0px;
+        }
+    }
+
+}
+
+@media screen and (min-width:941px) {
+    .cart-info {
+        display: block;
+        text-align: left;
+        margin-left: 4rem;
+    }
+}

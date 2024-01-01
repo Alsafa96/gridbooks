@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='css/main.css' />
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>User Account</title>
+</head>
+<body class='bg-gradient-to-b from-gray-600 to-white'>
+    <header class='bg-gradient-to-b from-gray-600 to-white'>
+            <h1 class='font-extrabold text-gray-800 text-2xl'>GridBooks</h1>
+            <h2 class='text-center md:text-3xl  xs:text-lg font-extrabold text-gray-800'>Welcome To Your Account</h2>
+            <nav class='navBar'>
+                <ul class='navTags mt-8'>
+                    <a href="/profile.html" class='bg-gradient-to-b from-gray-600 to-white p-2  rounded-lg  text-center text-gray-800 font-semibold shadow-md hover:bg-gradient-to-b hover:from-purple-900 hover:to-white cursor-pointer lg:w-1/6'><li>Profile</li></a>
+                    <a href="/orders.html" class='bg-gradient-to-b from-gray-600 to-white p-2  rounded-lg  text-center text-gray-800 font-semibold shadow-md hover:bg-gradient-to-b hover:from-purple-900 hover:to-white cursor-pointer lg:w-1/6'><li>Orders</li></a>
+                    <a href="/accountSettings.html" class='bg-gradient-to-b from-gray-600 to-white p-2  rounded-lg  text-center text-gray-800 font-semibold shadow-md hover:bg-gradient-to-b hover:from-purple-900 hover:to-white cursor-pointer lg:w-1/6'><li>Account Settings</li></a>
+                    <a href="/myBlogs.html" class='bg-gradient-to-b from-gray-600 to-white p-2  rounded-lg  text-center text-gray-800 font-semibold shadow-md hover:bg-gradient-to-b hover:from-purple-900 hover:to-white cursor-pointer lg:w-1/6'><li>Your Blog Posts</li></a>
+                </ul>
+            </nav>
+    </header>
+    <main class='bg-gradient-to-b from-white to-gray-600'>
+        <div class="grid sm:grid-cols-1 xs:grid-cols-1">
+            <div class="profile-container">
+                <img  id='profilePicture' width="100" height="200" src="imgs/Profile/profile.jpeg" alt="Profile Picture" class='rounded-full border-4  mt-10 mx-auto border-gray-800'>
+                <p id="userName" class="profile-title text-center font-extrabold lg:text-xl md:text-sm sm:text-sm xs:text-xs text-gray-700 mt-8">User:- Alsafa Thaar</p>
+                <p id="userAge" class="profile-title text-center font-extrabold lg:text-xl md:text-sm sm:text-sm xs:text-xs text-gray-700 mt-3">Age:- 26</p>
+                <p id='userAddress' class="profile-title text-center font-extrabold lg:text-xl md:text-sm sm:text-sm xs:text-xs text-gray-700 mt-3">Lives in:- Iraq, Baghdad, Ghazalia St.</p>
+                <p id="userEmail" class="profile-title text-center font-extrabold lg:text-xl md:text-sm sm:text-sm xs:text-xs text-gray-700 mt-3">Email address:- alafa_thaar@yahoo.com</p>
+                <p id="userPhoneNumber" class="profile-title text-center font-extrabold lg:text-xl md:text-sm sm:text-sm xs:text-xs text-gray-700 mt-3">Phone number:- 009647710568346</p>
+                <p id="userStudy" class="profile-title text-center font-extrabold lg:text-xl md:text-sm sm:text-sm xs:text-xs text-gray-700 mt-3">Study:- Medicine</p>
+                <p id="userInterests" class="profile-title text-center font-extrabold lg:text-xl md:text-sm sm:text-sm xs:text-xs text-gray-700 mt-3 mb-8">Interests:- Computer Programming.</p>
+            </div>
+        </div>
+    </main>
+    <footer class='w-full mt-10'>
+        &copy; 2021 Gridbooks | <span><a href="#">Privacy policy</a></span>|<span><a href="#">Shopping & return Policy</a></span>|<span><a href="#">Wholesale Orders</a></span>|<span><a href="#">Where to buy</a></span>|<span><a href="#">Contacy Us</a></span>
+    </footer>
+    <script type="text/javascript" src="./js/profileJS.js"></script>
+</body>
+</html>
